@@ -14,4 +14,4 @@ jobs:
       - name: Print Secret 
         run: |
           echo "my secret is \
-          ${{ secrets.SuperSecret }}" 
+          ${{ secrets.secret1 }}" 
