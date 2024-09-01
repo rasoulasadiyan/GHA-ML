@@ -1,1 +1,2 @@
-print('here script2.py')
+print('chert')
+print('pert')
