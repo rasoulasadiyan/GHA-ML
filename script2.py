@@ -1,2 +1,2 @@
-print('chert')
-print('pert')
+print('1')
+print('2')
