@@ -13,5 +13,14 @@ jobs:
     steps:
       - name: Print Secret 
         run: |
-          echo "my secret is \
+          echo "the secret1 is \
           ${{ secrets.secret1 }}" 
+# add new-secrets and variables in repo setting -> secrets and variables section
+
+      - name: Comment On Pull Request
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: |
+            done! :wave:
+
