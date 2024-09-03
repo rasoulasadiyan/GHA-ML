@@ -24,7 +24,10 @@ jobs:
           
       - name: Train model
         run: |
+<<<<<<< HEAD
           pip install -r requirements.txt
+=======
+>>>>>>> origin/master
           python3 preprocess_dataset.py
           python3 train.py
 
@@ -39,4 +42,8 @@ jobs:
           echo "![confusion matrix plot](./confusion_matrix.png)" >> model_eval_report.md
 
           # Create comment from markdown report
+<<<<<<< HEAD
           cml comment create model_eval_report.md
+=======
+          cml comment create model_eval_report.md
+>>>>>>> origin/master
