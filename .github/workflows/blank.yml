@@ -10,6 +10,11 @@ jobs:
   train_and_report_eval_performance:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          version: '16'
+          
       - name: Checkout 
         uses: actions/checkout@v3
       
