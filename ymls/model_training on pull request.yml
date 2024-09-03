@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: 3.9
 
       # Setup CML GitHub Action
       - name: Setup CML
@@ -24,6 +24,7 @@ jobs:
           
       - name: Train model
         run: |
+          pip install -r requirements.txt
           python3 preprocess_dataset.py
           python3 train.py
 
