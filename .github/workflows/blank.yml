@@ -33,12 +33,12 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Add metrics data to markdown
-          cat metrics.json >> model_eval_report.md
+          cat metrics.json >> README.md
           
           # Add confusion matrix plot to markdown
-          echo "![confusion matrix plot](./confusion_matrix.png)" >> model_eval_report.md
+          echo "![confusion matrix plot](./confusion_matrix.png)" >> README.md
 
           # Create comment from markdown report
 
-          cml comment create model_eval_report.md
+          cml comment create README.md
 
